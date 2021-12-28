@@ -458,7 +458,7 @@ tr td:last-child, .info-heading tr th:last-child {
     cursor: pointer;
 }
 
-.modal{
+#modal{
     display: none;
 }
 

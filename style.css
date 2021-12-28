@@ -404,7 +404,7 @@ tr td:last-child, .info-heading tr th:last-child {
 .profile-right-content button{
     border: none;
     outline: none;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
     background-color: #000;
     border-radius: .5rem;
     color: #fff;
@@ -509,6 +509,9 @@ tr td:last-child, .info-heading tr th:last-child {
 }
 .profile-right-content button{
     margin: .5rem 0;
+}
+.profile-right-content button{
+    padding: .5rem;
 }
 }
 

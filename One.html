@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Owl-Carousel/owl-carousel.min.css">
+    <link rel="stylesheet" href="/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/FontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- top navigation bar -->
+    <nav class="navbar navbar-expand-lg sideBarBg fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon" data-bs-target="#sidebar"><i class="fas fa-bars hamburger"></i></span>
+            </button>
+            <a class="navbar-brand text-white me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="#">MyPage</a>
+        </div>
+    </nav>
+    <!-- top navigation bar -->
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start sidebar-nav sideBar" tabindex="-1" id="sidebar">
+        <div class="offcanvas-body p-0">
+            <nav class="">
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#layouts1">
+                            <span class="me-2"><i class="bi bi-layout-split"></i></span>
+                            <span>Home</span>
+                            <span class="ms-auto">
+                                <span class="right-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="collapse" id="layouts1">
+                            <ul class="navbar-nav ps-3">
+                                <li>
+                                    <a href="#" class="nav-link px-3">
+                                        <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-3">
+                                        <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#layouts2">
+                            <span class="me-2"><i class="bi bi-layout-split"></i></span>
+                            <span>Home</span>
+                            <span class="ms-auto">
+                                <span class="right-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="collapse" id="layouts2">
+                            <ul class="navbar-nav ps-3">
+                                <li>
+                                    <a href="#" class="nav-link px-3">
+                                        <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-3">
+                                        <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-book-fill"></i></span>
+                            <span>Pages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-graph-up"></i></span>
+                            <span>Charts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-table"></i></span>
+                            <span>Tables</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="add mx-2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, eum!</p>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <!-- offcanvas -->
+
+    <main class="mt-5 pt-3">
+        
+        <div class="container-fluid">
+            <div>
+                <div class="tab-menu">
+                    <button id="profile">Profile</button>
+                    <button>Security</button>
+                    <button>Coin Holding</button>
+                    <button>Outstanding order</button>
+                    <button>Notification</button>
+                </div>
+        
+                <div class="select-area">
+                    <div class="single-select-area">
+                        <select name="" id="">
+                            <option value="Select">Select</option>
+                            <option value="Select">Select</option>
+                        </select>
+                    </div>
+        
+                    <div class="single-select-area">
+                        <form action="">
+                            <input type="date" id="first-date" name="firstDate">
+                        </form>
+                    </div>
+                    <div class="single-select-area">
+                        <form action="">
+                            <input type="date" id="first-date" name="firstDate">
+                        </form>
+                    </div>
+                    <div class="single-select-area">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+        
+                <!-- Profile Area -->
+                <div class="profile-area">
+                    <div class="profile-left">
+                        <h3>Profile</h3>
+                        <h2>jonnkim</h2>
+                        <strong>information</strong>
+                        <br>
+                        <br>
+                        <table class="info-table">
+                            <tr>
+                                <td>ID</td>
+                                <td>jonnkim</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td><input type="text" placeholder="jon@gmail.com"></td>
+                                <td><button>change</button></td>
+                            </tr>
+                            <tr>
+                                <td>Nationality</td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="Hong-Kong">Hong-Kong</option>
+                                        <option value="Hong-Kong">Hong-Kong</option>
+                                    </select>
+                                </td>
+                                <td><button>change</button></td>
+                            </tr>
+                            <tr>
+                                <td>Phone Number</td>
+                                <td><input type="number" placeholder="01759696957"></td>
+                                <td><button>change</button></td>
+                            </tr>
+                            <tr>
+                                <td>Language</td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="English">English</option>
+                                        <option value="English">English</option>
+                                    </select>
+                                </td>
+                                <td><button>change</button></td>
+                            </tr>
+                        </table>
+                    </div>
+        
+                    <div class="profile-right modal" id="modal">
+                        <h2>Pre-order</h2>
+                        <div class="profile-right-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repudiandae. Incidunt
+                                culpa fuga
+                                illum! Eveniet?</p>
+                            <button>Purchase</button>
+                            <button class="cancel" id="cancel">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#"><i class="fas fa-arrow-left"></i></a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                </div>
+        
+                <div class="py-5">
+                    <div class="bottom-content">
+                        <div class="process">
+                            <h2>How to process</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sapiente quibusdam
+                                excepturi odio
+                                nostrum voluptas dolore doloribus hic distinctio dicta.</p>
+                        </div>
+                        <div class="tips">
+                            <h2>Tips</h2>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam esse assumenda
+                                    consectetur
+                                    qui, vitae possimus.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, debitis?</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="sell" onclick="sell()" id="sell">sell</button>
+                </div><br>
+            </div>
+        </div>
+
+        <!-- Footer Area -->
+        <footer class="footer-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-logo">
+                            <i class="fab fa-stumbleupon"></i>
+                            <a href="#">P2P Global</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>About Us</h5>
+                        <ul>
+                            <li><a href="#">Item-option</a></li>
+                            <li><a href="#">Item-option</a></li>
+                            <li><a href="#">Item-option</a></li>
+                            <li><a href="#">Item-option</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>About Us</h5>
+                        <ul>
+                            <li><a href="#">Item-option</a></li>
+                            <li><a href="#">Item-option</a></li>
+                            <li><a href="#">Item-option</a></li>
+                            <li><a href="#">Item-option</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>About Us</h5>
+                        <ul>
+                            <li><a href="#">Item-option</a></li>
+                            <li><a href="#">Item-option</a></li>
+                            <li><a href="#">Item-option</a></li>
+                            <li><a href="#">Item-option</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>About Us</h5>
+                        <ul>
+                            <li><a href="#">Item-option</a></li>
+                            <li><a href="#">Item-option</a></li>
+                            <li><a href="#">Item-option</a></li>
+                            <li><a href="#">Item-option</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="/Jquery-lib/jquery-1.12.0.min.js"></script>
+    <script src="/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/Owl-Carousel/owl-carousel.min.js"></script>
+</body>
+
+</html>

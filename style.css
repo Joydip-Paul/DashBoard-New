@@ -1,0 +1,634 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.hamburger{
+    color: #fff;
+}
+/* side bar start =============================*/
+.sideBarBg{
+    background-color: #45556C;
+}
+.sideBar{
+    background-color: #45556C;
+}
+.sideBar ul li a{
+    color: #fff;
+}
+.sideBar ul li a:hover, .sideBar ul li a:focus{
+    color: #fff;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+
+/* side bar End =============================*/
+/* ============== */
+.add{
+    border: 1px solid #fff;
+    padding: 1rem;
+    height: 60%;
+    margin-top: 2rem;
+}
+/* side bar End  */
+
+/* Dashboard main css start *=======================================*/
+
+.dashborad{
+    background-color: #D8DAE9;
+}
+
+.market-trend{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 1rem;
+}
+
+.count{
+    color: #019927da;
+}
+
+.single-market-trend{
+    background-color: #fff;
+    border-radius: 1rem;
+    text-align: left;
+    padding: 1rem;
+}
+
+.search-area{
+    display: grid;
+    grid-template-columns: repeat(2, .5fr) 1fr;
+    grid-gap: 1rem;
+    width: 80%;
+}
+
+.search{
+    display: flex;
+}
+
+.search input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+    border-radius: .5rem;
+}
+
+.search button{
+    border: none;
+    outline: none;
+    padding: .5rem;
+    margin: 0 .2rem;
+    background-color: #fff;
+    border-radius: .2rem;
+}
+
+.search-area select{
+    width: 100%;
+    border: none;
+    padding: .5rem;
+    border-radius: .2rem;
+    outline: none;
+    background-color: #fff;
+}
+
+
+.table-data {
+  border-collapse:separate; 
+  border-spacing: 0 .5em;
+  width: 100%;
+}
+
+.table-data td, .table-data th {
+  text-align: left;
+  padding: 8px;
+  font-size: .8rem;
+}
+
+.table-data tr {
+  background-color: #fff;
+}
+
+ tr td:first-child, .info-heading tr th:first-child { 
+  border-top-left-radius: 10px; 
+  border-bottom-left-radius: 10px;
+}
+
+tr td:last-child, .info-heading tr th:last-child { 
+  border-top-right-radius: 10px; 
+  border-bottom-right-radius: 10px;
+}
+
+.info-heading tr{
+    background-color: #7F7F7F;
+    color: #fff;
+}
+
+.table-body tr a{
+    color: #000;
+}
+
+.table-body button{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: .2rem .5rem;
+}
+
+.buy-coin button{
+    background-color: #EB7D31;
+}
+
+.more-data{
+    float: right;
+    text-decoration: none;
+    color: #000;
+}
+
+.line{
+    position: relative;
+}
+
+.line::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 102%;
+    background-color: #b0b2b9;
+    height: 92%;
+    width: 2px;
+    transform: translateX(-102%);
+    transform: translateY(3%);
+}
+
+.object-coin i {
+    color: #0649afda;
+}
+
+@media only screen and (max-width: 1200px){
+.table-data td, .table-data th {
+  font-size: .8rem;
+}
+}
+
+@media only screen and (max-width: 992px){
+    .market-trend, .search-area{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .table-data td, .table-data th {
+        font-size: .6rem;
+        padding: 5px;
+    }
+    .line::after{
+    display: none;
+}
+}
+
+@media only screen and (max-width: 768px){
+    .market-trend, .search-area{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+
+@media only screen and (max-width: 400px){
+    .market-trend, .search-area{
+    grid-template-columns: repeat(1,1fr);
+}
+.table-data td, .table-data th {
+        font-size: .4rem;
+        padding: 5px;
+    }
+    .table-body button{
+    padding: .2rem;
+}
+}
+
+.tootip{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 300px){
+.table-data td, .table-data th {
+        font-size: .3rem;
+        padding: 2px 4px;
+    }
+}
+
+.owl-next{
+    font-size: 2.5rem !important;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%,-50%);
+}
+.owl-prev{
+    font-size: 2.5rem !important;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translate(-50%,-50%);
+}
+
+
+/* Dashboard main css End =======================*/
+
+
+
+/* Page One main css Start ====================== */
+.tab-menu{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 100%;
+    padding: .5rem 0;
+}
+
+.tab-menu button{
+    background: none;
+    border: none;
+    outline: none;
+    color: #000;
+    width: 100%;
+    padding: .5rem 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transition: .5s ease-in;
+}
+
+.tab-menu button:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#profile{
+    background-color: #000;
+    color: #fff;
+}
+
+.select-area{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 100%;
+    padding: .5rem 0;
+}
+
+.select-area .single-select-area{
+    margin: 0 1rem;
+}
+
+.single-select-area select, .single-select-area input{
+    padding: .5rem;
+    border-radius: .2rem;
+    width: 100%;
+    outline: none;
+    margin: 0 2rem;
+    cursor: pointer;
+}
+
+.single-select-area select{
+    padding: .7rem;
+}
+
+.single-select-area button{
+    margin-left: 2rem;
+    padding: .6rem;
+    border-radius: .2rem;
+}
+
+.profile-left{
+    width: 60%;
+}
+
+.info-table{
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 5em;
+}
+
+.info-table input, .info-table select{
+    width: 100%;
+    outline: none;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.info-table select{
+    width: 100%;
+}
+
+.info-table button{
+    padding: .6rem;
+    border-radius: .5rem;
+    width: 100%;
+    background: #000;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.info-table td,.info-table input{
+    margin: .5rem 0;
+}
+
+/* .profile-area */
+.profile-area{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-right{
+    width: 40%;
+    border: 2px solid #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-right h2{
+    background-color: #44546A;
+    color: #fff;
+    padding: .5rem;
+    margin: 0;
+}
+
+.profile-right-content{
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+}
+
+.profile-right-content button{
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    background-color: #000;
+    border-radius: .5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.profile-right-content .cancel{
+    background-color: red;
+}
+/* .profile-area */
+
+.pagination{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.pagination a{
+    text-decoration: none;
+    color: #000;
+    letter-spacing: .5rem;
+}
+
+/* bottom-content */
+.bottom-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.process, .tips{
+    width: 60%;
+    background-color: #ddd;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.tips{
+    width: 40%;
+}
+
+.sell{
+    float: right;
+    margin: 0 1rem 1rem 0;
+    border: none;
+    outline: none;
+    background-color: dodgerblue;
+    padding: 1rem 3rem;
+    color: #fff;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.modal{
+    display: none;
+}
+
+/* bottom-content */
+@media only screen and (max-width: 768px){
+    .tab-menu{
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem 0;
+}
+
+.select-area{
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem 0;
+}
+.select-area .single-select-area{
+    margin: 0;
+}
+.single-select-area select, .single-select-area input{
+    padding: .5rem;
+    margin: 0;
+    width: 80%;
+}
+.single-select-area button{
+    margin-left: 0;
+}
+.profile-area{
+    flex-direction: column;
+}
+.profile-left{
+    width: 100%;
+}
+.profile-right{
+    margin: 1rem auto;
+}
+.profile-right-content{
+    padding: 1rem;
+}
+.bottom-content{
+    flex-direction: column;
+}
+.process, .tips{
+    width: 80%;
+    margin: 1rem;
+}
+.sell{
+    float: left;
+    margin-left: 1rem;
+}
+.profile-right-content button{
+    margin: .5rem 0;
+}
+}
+
+@media only screen and (max-width: 600px){
+    .modal{
+        width: 80%;
+    }
+}
+
+/* Page One main css End ====================== */
+
+
+
+/* Page two main css Start ====================== */
+.color-red{
+    color: red;
+}
+
+.left-side{
+    width: 50%;
+    padding: 1rem 0;
+}
+
+.right-side{
+    margin: 0 5rem;
+}
+
+.right-side-content{
+    border: 1px solid #000;
+    padding: 2rem 1rem;
+    height: 60%;
+}
+
+.d-flex, .frame{
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle-part ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.middle-part input{
+    outline: none;
+    padding: .2rem;
+}
+
+.middle-part select{
+    padding: .2rem;
+}
+
+.middle-part ul li{
+    display: flex;
+    justify-content: space-between;
+    margin: .8rem 0;
+}
+
+.opening-hour-table select{
+    padding: .2rem .5rem;
+    border-radius: .2rem;
+}
+
+.select-td-one{
+    margin-left: 2rem;
+}
+
+.regi{
+    border: none;
+    outline: none;
+    background-color: dodgerblue;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px){
+    .frame{
+    flex-direction: column;
+}
+.left-side{
+    width: 100%;
+}
+.opening-hour select{
+    width: 30%;
+}
+.right-side{
+    margin: 2rem 0;
+}
+}
+/* Page two main css End ====================== */
+
+
+/*Footer area css code*==============================*/
+.footer-area {
+    padding: 2rem 0;
+    background-color: #45556C;
+}
+
+.footer-area ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-area h5{
+    color: #fff;
+}
+
+.footer-area ul li a{
+    color: #fff;
+}
+
+.footer-logo a, .footer-logo i {
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+/*footer area end*/
